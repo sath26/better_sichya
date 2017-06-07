@@ -1,5 +1,7 @@
 # How to use
-
+to push the existing one
+git remote add origin https://github.com/sath26/better_sichya.git
+git push -u origin master
 
 Clone repo
 
