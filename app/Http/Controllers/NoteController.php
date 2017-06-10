@@ -106,10 +106,10 @@ class NoteController extends Controller
         // return "<img src='".$url."'/>";
     public function show($id)
     {
-
-       $note = Note::find($id)->first();
+        // dd($id);
+       $note = Note::find($id);
         $tags = Tag::all();
-         dd($note);
+        // dd($note);
        return view('notes.show')
                     ->with('notes',$note )
                     ->with('tags',$tags);

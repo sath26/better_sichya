@@ -1,5 +1,5 @@
  
-	@extends('layouts.front')
+@extends('layouts.front')
 @section('heading')
 <a class="btn btn-primary pull-right"  href="{{route('note.create')}}">Upload Note</a> <br>
 
@@ -11,10 +11,11 @@
 		
 	<ul>
 {{$notes}}
-		@foreach ($notes as $note)
-			<li><img src="{{ asset($note->file_name)}}"></li>
 		
-		@endforeach
+			<li><img src="{{ asset("storage/uploads/$notes->file_name")}}"></li>
+			
+		
+		
 	</ul>
 </div>
 
