@@ -13,10 +13,10 @@ return [
             'scope' => [],
         ],
         'google' => [
-            'client_id' => '12345678',
-            'client_secret' => 'y0ur53cr374ppk3y',
-            'redirect_uri' => 'https://example.com/your/google/redirect',
-            'scope' => [],
+            'client_id' => '657940062137-oko6q97g7m7tc6pj4nmtqmof36m6ttrs.apps.googleusercontent.com',
+            'client_secret' => 'tNd31A_YOlY0nRGmPR24eJO3',
+            'redirect_uri' => 'http://localhost:8000/google/redirect',
+            'scope' => ['email','profile','https://www.googleapis.com/auth/drive'],
         ],
         'github' => [
             'client_id' => '12345678',

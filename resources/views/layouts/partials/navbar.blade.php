@@ -20,7 +20,11 @@
         <div class="collapse navbar-collapse" id="app-navbar-collapse">
             <!-- Left Side Of Navbar -->
             <ul class="nav navbar-nav">
-                &nbsp;
+                <li><a href="{{ url('/home') }}">Question</a></li>
+                <li><a href="{{ url('') }}">Book</a></li>
+                <li><a href="{{ url('') }}">Blog</a></li>
+                <li><a href="{{ url('/note') }}">Notes</a></li>
+                {{-- <li><a href="{{ url('') }}">Tags</a></li> --}}
             </ul>
 
             <!-- Right Side Of Navbar -->

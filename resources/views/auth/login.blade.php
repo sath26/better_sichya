@@ -16,7 +16,7 @@
             </div>
               
             <div class="col-xs-6 col-sm-2 col-md-3">
-                <a href="#" class="btn btn-lg btn-block omb_btn-google">
+                <a href="{{ route('social.auth', ['provider' => 'google']) }}" class="btn btn-lg btn-block omb_btn-google">
                     <i class="fa fa-google-plus visible-xs"></i>
                     <span class="hidden-xs">Google+</span>
                 </a>

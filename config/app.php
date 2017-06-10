@@ -1,8 +1,7 @@
 <?php
 
 return [
-    'fileDestinationPath'=>'storage/uploads',
-    'allowedFileTypes' => 'docx, ppt, pdf,png, jpg, jpeg',
+    
     'maxFileSize'=> '30000',//in kilobytes
     /*
     |--------------------------------------------------------------------------

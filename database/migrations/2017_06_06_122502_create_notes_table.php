@@ -15,6 +15,8 @@ class CreateNotesTable extends Migration
     {
         Schema::create('notes', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('title');
+            $table->string('description');
             $table->string('file_name');
             $table->string('file_size');
             $table->string('mimes_type');
