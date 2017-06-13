@@ -10,7 +10,7 @@
             {!! \Michelf\Markdown::defaultTransform($thread->body)  !!}
         </div>
         <br>
-
+        {{ Counter::showAndCount('thread', $thread->id) }}
         {{--@if(auth()->user()->id == $thread->user_id)--}}
         @can('update',$thread)
             <div class="actions">

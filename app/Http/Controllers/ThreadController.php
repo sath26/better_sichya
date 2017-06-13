@@ -92,7 +92,7 @@ class ThreadController extends Controller
         //return view('thread.single', compact('thread'));
           $thread = Thread::find($id);
         //$best_answer = $thread->replies()->where('best_answer', 1)->first();
-        dd($thread);
+        
 
         return view('thread.single')
                             ->with('thread',$thread)

@@ -24,7 +24,9 @@
                     <span>
                         {{ $thread->comments->count() }} Replies
                     </span>
-                    
+                     <span>
+        {{ Counter::show('thread', $thread->id) }} Views
+                    </span>
                     @foreach ($thread->tags as $tag)
                     <a href="{{ route('tag', ['slug' => $tag->slug ]) }}"><span class="badge">{{ $tag->title }}</span></a>
                     

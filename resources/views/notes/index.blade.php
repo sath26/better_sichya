@@ -24,7 +24,9 @@
 				</td>	
 				<td>
 					<a href="{{ route('note.show', ['id' => $note->id ]) }}" class="btn btn-default">view</a>
+					@if (Auth::id()==$note->user_id)
 					<a href="{{ route('note.destroy', ['id' => $note->id ]) }}" class="btn btn-danger">delete</a>
+					@endif
 				</td>
 			</tr>
 

@@ -10,7 +10,7 @@
 
 		
 	<ul>
-{{$notes}}
+
 		
 			<li><img src="{{ asset("storage/uploads/$notes->file_name")}}"></li>
 			

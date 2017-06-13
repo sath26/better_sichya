@@ -19,6 +19,7 @@ class CreateThreadsTable extends Migration
             // $table->integer('solution');
             $table->string('slug');
             $table->text('body');
+            $table->integer('view_count')->default(0);
             // $table->integer('user_id')->unsigned()->nullable;
             $table->timestamps();
         });
